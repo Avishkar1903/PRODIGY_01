@@ -1,0 +1,151 @@
+*{
+    margin:0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: gilroy;
+}
+html,body{
+    height: 100% ;
+    width: 100%;
+}
+#main{
+    height: 100%;
+    width: 100%;
+    background-color: #9EA4B1;
+    position: relative;
+}
+
+#nav{
+    height: 100px;
+    padding: 0 80px;
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+
+}
+#nav img{
+    height: 37px;
+    margin-right: 100px;
+
+}
+#nav-part1{
+
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+#nav-part1 h4{
+    margin-right: 50px;
+    font-size: 20px;
+    text-transform: uppercase;
+    font-weight: 600;
+}
+
+#nav-part2 i{
+    margin-right: 20px;
+    font-size: 26px;
+    font-weight: 500;
+}
+#nav-part2 :hover {
+    color: black;
+    background-color: white;
+
+}
+#content{
+    width: 100%;
+    height:calc(100% - 110px);
+    position: relative;
+    display: flex;
+} 
+#left h5{
+    font-size: 15px;
+    color: rgb(72, 70, 70);
+    margin-bottom: 15px;
+}  
+#left h1{
+    font-size: 40px;
+    text-transform: uppercase;
+    margin-bottom: 30px;
+} 
+#left p{
+    font-size: 12px;
+    margin-bottom: 40px;
+}
+#left button{
+    background-color: black;
+    color: #fff;
+    font-size: 17px;
+    font-weight: 600;
+    padding: 17px 40px;
+    border-radius: 50px;
+    border-top-left-radius: 0px;
+    text-transform: uppercase;
+}
+ 
+#left button:hover{
+    text-decoration: underline;
+    text-transform: uppercase;
+    flex-direction: row-reverse;
+    
+}
+#left{
+    width: 40%;
+    height: 100%;
+    padding: 90px 150px;
+}
+#right{
+    width: 60%;
+    height: 100%;
+    position: relative;
+    padding: 45px;
+    white-space: nowrap;
+    overflow-x: auto;
+}
+#right::-webkit-scrollbar{
+    display: none;
+}
+
+.elem{
+    height: 480px;
+    width: 340px;
+    background-color: #fff;
+    position: relative;
+    box-shadow: 0 5px 10px rgba(0, 0, 0, 0.3);
+    border-radius: 10px;
+    display: inline-block;
+    margin-right: 30px;
+}
+.elem img {
+    height: 40%;
+    width: 100%;
+    top: 25%;
+    object-fit: cover;
+    position: absolute;
+}
+.elem h4 {
+    position: absolute;
+    bottom: 0;
+    right: 0;
+    background-color: #9EA4B1;
+    padding: 15px 30px;
+    border-radius: 6px;
+
+}
+.elem h5 {
+    position: absolute;
+    bottom: 10%;
+    right: 0;
+    background-color: #080808;
+    color: #fff;
+    font-weight: 500;
+    font-size: 13px;
+    padding: 15px 30px;
+    border-radius: 6px;
+    
+}
+#main #nav #nav-part1 h4:hover{
+    cursor: pointer;
+    font-size: 26px;
+    color: white;
+}
